@@ -68,3 +68,56 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Chat Interface System
+
+## Prerequistes
+
+This chat system requires multiple workstations uniquely identifies by an Internet Protocol (IP) address.
+
+## Available Scripts
+
+The project can be run on localhost using nodemon server.
+
+In the project directory, you can run:
+
+### `npm init`
+
+npm init <initializer> can be used to set up a new or existing npm package.
+
+initializer in this case is an npm package named create-<initializer>, which will be installed by npm-exec, and then have its main bin executed -- presumably creating or updating package.json and running any other initialization-related operations.
+
+See the section about [initialiser](https://docs.npmjs.com/cli/v7/commands/npm-init#description) for more information.
+
+### `socket.io`
+
+Features
+Socket.IO enables real-time bidirectional event-based communication. It consists of:
+
+a Node.js server (this repository)
+a Javascript client library for the browser (or a Node.js client)
+Some implementations in other languages are also available:
+
+Java
+C++
+Swift
+Dart
+Python
+.Net
+Its main features are:
+
+Reliability
+Connections are established even in the presence of:
+
+proxies and load balancers.
+personal firewall and antivirus software.  
+
+You can learn more in the [Socket.io documentation](https://www.npmjs.com/package/socket.io).
+
+### `moment`  
+
+A JavaScript date library for parsing, validating, manipulating, and formatting dates.
+
+You can learn more in the [Moment.js documentation](https://www.npmjs.com/package/moment).
+  
