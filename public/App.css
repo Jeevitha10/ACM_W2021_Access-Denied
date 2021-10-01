@@ -409,7 +409,7 @@ header.sticky {
 
 .scroll-top {
 	position: fixed;
-	bottom: 7.5rem;
+	bottom: 12rem;
 	right: 1.5rem;
 	z-index: 1000;
 }
