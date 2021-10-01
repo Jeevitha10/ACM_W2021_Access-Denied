@@ -72,7 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Chat Interface System
 
-## Prerequistes
+## Prerequisites
 
 This chat system requires multiple workstations uniquely identifies by an Internet Protocol (IP) address.
 
