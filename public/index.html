@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Chat With Us 🔗</title>
+  </head>
+  <style>
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+    }
+
+    ::placeholder {
+      color: #000;
+      opacity: 1; /* Firefox */
+      padding-left: 10px;
+    }
+
+    
+    #username {
+      padding-left: 20px;
+    }
+
+    .join-main input[type='text']{
+      height: 60px;
+    }
+    
+  </style>
+  <body>
+    <div class="join-container">
+      <header class="join-header">
+        <h1><i class="fas fa-user-nurse"></i>  Chat With Us 🔗</h1>
+      </header>
+      <main class="join-main">
+        <form action="chat.html">
+          <div class="form-control">
+            <label for="username">Name</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter name"
+              required
+            />
+          </div>
+          <div class="form-control" id="wrap">
+            <br /><label for="room"></label>
+            <div class="select">
+              <select name="room" id="room" required>
+                <option value="">Select...</option>
+                <option value="Pregnancy Care">Pregnancy Care</option>
+                <option value="General Medical Assistance">
+                  General Medical Assistance
+                </option>
+                <option value="Covid Helpline">Covid Helpline</option>
+              </select>
+            </div>
+           
+          </div>
+          <button type="submit" class="btn"><strong>Join Chat</strong></button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

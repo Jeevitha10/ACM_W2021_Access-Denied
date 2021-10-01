@@ -1,0 +1,95 @@
+<!-- TO RUN CHAT DO THIS:
+npm install
+npm run dev
+
+Go to localhost:3000
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+       integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+       crossorigin="anonymous"
+     />
+     <link rel="stylesheet" href="/css/styles.css" />
+     <title>Chat With Us 🔗</title>
+   </head>
+   <style>
+     input:focus, textarea:focus, select:focus{
+         outline: none;
+     }
+ 
+     ::placeholder {
+       color: #000;
+       opacity: 1; 
+       padding-left: 10px;
+     }
+ 
+     .btn{
+       margin-top:0;
+       margin-left: 10px;
+     }
+ 
+     #msg{
+       padding-left: 20px;
+     }
+     
+ 
+     @media screen and (max-width:941px) {
+       .chat-header,h1{
+         align-items: center;
+         justify-content: center;
+         padding-left: 40px;
+         padding-right: 40px;
+         padding-top: 20px;
+         min-height: 60px;
+         max-height: 250px;
+       }
+      
+       
+     }
+ 
+   </style>
+   <body>
+     <div class="chat-container">
+       <header class="chat-header">
+         <h1><i class="fas fa-user-nurse"></i> Chat With Us 🔗</h1>
+       </header>
+       <main class="chat-main">
+         <div class="chat-sidebar">
+           <h2 id="room-name"></h2>
+           <h4 style="margin-left: 20px;">Users</h4>
+           <ul id="users" style="margin-left: 20px;"></ul>
+         </div>
+         <div class="chat-messages"></div>
+       </main>
+       <div class="chat-form-container">
+         <form id="chat-form">
+           <input
+             id="msg"
+             type="text"
+             placeholder="Enter Message"
+             required
+             autocomplete="off"
+           />
+           <button class="btn"><i class="fas fa-paper-plane"></i> &nbsp&nbspSend</button><br>
+           <a id="exit-btn" class="btn" style="padding-top: 8px;">Exit</a>
+ 
+         </form>
+       </div>
+     </div>
+ 
+     <script
+       src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+       integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+       crossorigin="anonymous"
+     ></script>
+     <script src="/socket.io/socket.io.js"></script>
+     <script src="js/main.js"></script>
+   </body>
+ </html>
+ 
