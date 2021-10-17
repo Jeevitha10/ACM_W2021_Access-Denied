@@ -70,7 +70,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 # Covi Care Analyser
-Open the python notebook with colab by clicking this [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1milbLQeijt5gWUwI-eNaNuIAv-I_mKuc?usp=sharing)]
+Open the python notebook with colab by clicking this [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1milbLQeijt5gWUwI-eNaNuIAv-I_mKuc?usp=sharing)
+
 
 
 # Chat Interface System
