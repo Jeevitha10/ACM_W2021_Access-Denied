@@ -1,6 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="App.css">
+
+  <title>Covid Care</title>
+
   <style>
     img {
       width: 75%;
@@ -9,25 +19,19 @@
     }
 
     .title {
-      color: White;
-      margin: 0 auto;
-      font-size: 20px;
-      max-width: 50%;
-    }
-
-    .card {
-      height: 100vh;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      color: #0a3d62;
+      margin-top: 20px;
+      font-size: 2rem;
     }
 
     table {
-      margin: 1.5rem auto;
+      margin: 7rem auto;
+      height: 80vh;
       font-size: 1.5rem;
     }
 
     thead {
-      background-color: #18659c;
+      background-color: #0a3d62;
       color: #fff;
     }
 
@@ -49,11 +53,23 @@
     tr:nth-child(even) {
       background-color: #f5f5f5;
     }
+
+    .home-btn {
+      color: #0a3d62;
+      position: absolute;
+      top: 30px;
+      right: 3rem;
+      font-size: 4rem;
+    }
   </style>
 </head>
 
-<body style="text-align: center; background-color:#0a3d62;">
-  <h1 style="color: white">COVICARE ANALYSER RESULTS</h1>
+<body style="text-align: center; background-color:#eff6ff;">
+  <a href="http://localhost:3000/" class="home-btn">
+    <span class="fas fa-home"></span>
+  </a>
+
+  <h1 class="title">COVICARE ANALYSER RESULTS</h1>
 
   <h3 class="title">COMPARISON BETWEEN PREDICTED CASES AND ACTUAL CASES</h3>
 
@@ -127,46 +143,46 @@
     </tbody>
   </table>
 
-  <div class="card">
-    <h3 class="title">GRAPHICAL REPRESENTATION OF TOTAL NUMBER OF AFFECTED CASES AND TOTAL NUMBER OF RECOVERED CASES PER
+  <div class="r-card">
+    <h3 class="r-card__title">VISUALIZATION OF REGRESSION MODEL FOR TOTAL NUMBER OF AFFECTED CASES</h3>
+    <img class="r-card__img " src="../static/static/4.png" />
+  </div>
+
+  <div class="r-card r-card-1">
+    <img class="r-card__img r-card__img-1" src="../static/static/2.png" />
+    <h3 class="r-card__title">VISUALIZATION OF TOP 10 MOST AFFECTED STATES</h3>
+  </div>
+
+  <div class="r-card">
+    <h3 class="r-card__title">GRAPHICAL REPRESENTATION OF TOTAL NUMBER OF AFFECTED CASES AND TOTAL NUMBER OF
+      RECOVERED CASES PER
       DAY</h3>
-    <img class="imag" src="../static/static/1.png" />
+    <img class="r-card__img" src="../static/static/1.png" />
   </div>
 
-  <div class="card">
-    <h3 class="title">VISUALIZATION OF TOP 10 MOST AFFECTED STATES</h3>
-    <img class="imag" src="../static/static/2.png" />
+  <div class="r-card r-card-1">
+    <img class="r-card__img r-card__img-1" src="../static/static/8.png" />
+    <h3 class="r-card__title">GRAPHICAL REPRESENTATION OF TOTAL NUMBER OF DEATH VS TOTAL NUMBER OF RECOVERED CASES</h3>
   </div>
 
-  <div class="card">
-    <h3 class="title">VISUALIZATION OF REGRESSION MODEL FOR TOTAL NUMBER OF AFFECTED CASES</h3>
-    <img class="imag" src="../static/static/4.png" />
+  <div class="r-card">
+    <h3 class="r-card__title">REPRESENTATION OF NUMBER OF DEATH CASES OVER TIME</h3>
+    <img class="r-card__img" src="../static/static/5.png" />
   </div>
 
-  <div class="card">
-    <h3 class="title">REPRESENTATION OF NUMBER OF DEATH CASES OVER TIME</h3>
-    <img class="imag" src="../static/static/5.png" />
+  <div class="r-card r-card-1">
+    <img class="r-card__img r-card__img-1" src="../static/static/6.png" />
+    <h3 class="r-card__title">REPRESENTATION OF MORTALITY RATE OVER A PERIOD OF TIME</h3>
   </div>
 
-  <div class="card">
-    <h3 class="title">REPRESENTATION OF MORTALITY RATE OVER A PERIOD OF TIME</h3>
-    <img class="imag" src="../static/static/6.png" />
+  <div class="r-card">
+    <h3 class="r-card__title">REPRESENTATION OF CONFIRMED CASES IN EACH STATES</h3>
+    <img class="r-card__img" src="../static/static/bar.png" />
   </div>
 
-  <div class="card">
-    <h3 class="title">REPRESENTATION OF LINEAR REGRESSION PREDICTION MODEL FOR NEXT 10 DAYS</h3>
-    <img class="imag" src="../static/static/3.png" />
-  </div>
-
-  <div class="card">
-    <h3 class="title">GRAPHICAL REPRESENTATION OF TOTAL NUMBER OF DEATH VS TOTAL NUMBER OF RECOVERED CASES</h3>
-    <img class="imag" src="../static/static/8.png" />
-  </div>
-
-  <div class="card">
-    <h3 class="title">REPRESENTATION OF CONFIRMED CASES IN EACH STATES</h3>
-    <img class="imag" src="../static/static/bar.png" />
-  </div>
+  <a href="" class="scroll-top">
+    <img src="images/scroll-img.png" alt="" />
+  </a>
 </body>
 
 </html>
